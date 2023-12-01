@@ -1,0 +1,171 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Random Stuff %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{0pt}]
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Commands  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubheadingContinue}[2]{
+  \vspace{-3pt}
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{0pt}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Heading  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+    \begin{center}
+        % NAME
+        {\Huge\scshape Adolfo Sanpedro Gante} 
+        % SUBHEADING
+        \\ Undergraduate Computer Science\\
+        \small
+        % EMAIL
+        \href{mailto:EMAIL}{\raisebox{-0.2\height}\faEnvelope\  \underline{adolfogante@gmail.com}} ~
+        % MOBILE
+        \href{tel:+17604984391}{\raisebox{-0.2\height}\faMobile\  \underline{+1-760-498-4391}} ~ 
+        % LINKEDIN
+        \href{LINK}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/adolfogante}}  ~
+        % GITHUB
+        \href{LINK}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/adoante}} ~
+        % WEBSITE
+        \href{LINK}{\underline{adolfogante.com}}
+    \end{center}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Education  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    % MAIN INFORMATION
+    \resumeSubheading
+    {Cal State San Marcos}{San Marcos, CA}
+    {Bachelors of Science in Computer Science, 3.00 GPA}{2023 - Present}
+        % BULLET POINTS
+        \resumeItemListStart
+            \resumeItem{\textbf{Selected Coursework:} DSA, Computer Architecture, Linear Algebra}
+        \resumeItemListEnd
+    \resumeSubheading
+    {Palomar College}{San Marcos, CA}
+    {Associates of Science in Computer Science, 3.00 GPA}{Graduated 2023}
+        % BULLET POINTS
+        \resumeItemListStart
+            \resumeItem{\textbf{Selected Coursework:} Linux Fundamentals, Machine Organization \& Assembly Language, Calculus I\&II}
+        \resumeItemListEnd
+        
+  \resumeSubHeadingListEnd
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  PROJECTS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Personal Projects} 
+    \resumeSubHeadingListStart
+        % Project 1
+        \resumeProjectHeading
+        {3x3 Macropad -\href{LINK}{\raisebox{-0.2\height}\ \underline{github.com/adoante/3x3-Macropad}}}
+        % Date
+        {Summer 2023}
+        \resumeItemListStart
+            \resumeItem{Embedded Systems project utilizing a Raspberry Pi Pico Mircocontroller, Circuit-Python and 3D-printed case.}
+        \resumeItemListEnd
+        % Project 2
+        \resumeProjectHeading
+        {catpictures.xyz -\href{LINK}{\raisebox{-0.2\height}\ \underline{github.com/adoante/catpictures.xyz}}}
+        % Date
+        {Fall 2023}
+        \resumeItemListStart
+            \resumeItem{Web Development project utilizing multiple APIs. TheCatAPI fetches random images on page reload. Advice Slip JSON API fetches random advice slip on reload to caption images. Site was build using HTML/CSS and JavaScript.}
+        \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Technical Skills  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Technical Skills}
+
+    \vspace{-7pt}
+    \begin{itemize}
+    [leftmargin=0.15in, label={}]\small{\item{
+        % LANGUAGES
+        \textbf{Languages}{: C, C++, Java, Python, HTML/CSS, JavaScript, MarkDown} \\
+        % TOOLS
+        \textbf{Developer Tools}{: Git/GitHub, VSCode, Vim, Visual Studio, Command Line} \\
+        % TECHNOLOGIES
+        \textbf{Technologies}{: Linux/Unix, Raspberry Pi, Arduino, Ender-3,  Ultimaker Cura} \\
+        % FRAMEWORKS
+        \textbf{Frameworks}{: React} \\
+        }}
+    \end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Experience  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Work Experience}
+    \resumeSubHeadingListStart
+    
+        % COMPANY 1
+        \resumeSubheading
+        {Island's Restaurant}{Vista, CA}
+            % POSITION 1
+            {Line Cook}{2022 - Present}
+            \resumeItemListStart
+                \resumeItem{Managed a line of five cooks, delegating tasks, coordinating rest periods and meal breaks.}
+                \resumeItem{Communicated with management regarding prepped recipes and food orders.}
+                \resumeItem{Served as Fry, Salad, Grill and Acting Prep cook. Started as dishwasher.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+ 
+\end{document}
